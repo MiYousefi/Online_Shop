@@ -1,8 +1,23 @@
 from django.contrib import admin
 
-from .models import Product
+from .models import Product, Comment
+
+
+class CommentInline(admin.TabularInline):
+    model = Comment
+    fields = ['author', 'body', 'stars', 'active']
+    extra = 1
 
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
     list_display = ['title', 'price', 'datetime_created', 'datetime_modified', 'active']
+
+    inlines = [
+        CommentInline
+    ]
+
+
+@admin.register(Comment)
+class CommentAdmin(admin.ModelAdmin):
+    list_display = ['product', 'author', 'body', 'stars', 'datetime_created', 'active']
