@@ -35,3 +35,25 @@ class CommentCreateView(generic.CreateView):
         product = get_object_or_404(Product, id=product_id)
         obj.product = product
         return super().form_valid(form)
+
+
+# def product_detail_view(request, pk):
+#     product = get_object_or_404(Product, pk=pk)
+#     product_comment = product.comments.all()
+#
+#     if request.method == 'POST':
+#         comment_form = CommentForm(request.POST)
+#         if comment_form.is_valid():
+#             new_comment = comment_form.save(commit=False)
+#             new_comment.author = request.user
+#             new_comment.product = product
+#             new_comment.save()
+#             comment_form = CommentForm()
+#     else:
+#         comment_form = CommentForm()
+#
+#     return render(request, 'products/product_detail.html', {
+#         'product': product,
+#         'comments': product_comment,
+#         'comment_form': comment_form,
+#     })
