@@ -54,7 +54,8 @@ INSTALLED_APPS = [
 
     'accounts.apps.AccountsConfig',
     'pages.apps.PagesConfig',
-    'products.apps.ProductsConfig'
+    'products.apps.ProductsConfig',
+    'cart.apps.CartConfig',
 ]
 
 # *********** all-auth settings ************
