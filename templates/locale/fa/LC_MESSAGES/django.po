@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-13 01:28+0330\n"
-"PO-Revision-Date: 2023-06-13 01:46+0330\n"
+"POT-Creation-Date: 2023-06-16 01:13+0330\n"
+"PO-Revision-Date: 2023-06-16 01:13+0330\n"
 "Last-Translator:   <miladyousefi4s@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -35,27 +35,27 @@ msgstr "صفحات"
 msgid "Contact us"
 msgstr "ارتباط با ما"
 
-#: _base.html:101
-msgid "Account"
-msgstr "حساب کاربری"
+#: _base.html:102
+msgid "Welcome"
+msgstr "خوش آمدید"
 
-#: _base.html:104
-msgid "Cart"
-msgstr "سبد خرید"
+#: _base.html:105
+msgid "Log out"
+msgstr "خروج"
 
-#: _base.html:107
-msgid "Favorites"
-msgstr "موارد دلخواه"
+#: _base.html:109
+msgid "Log in"
+msgstr "ورود"
 
-#: _base.html:110
-msgid "Order history"
-msgstr "تاریخچه سفارش"
+#: _base.html:113
+msgid "Sign up"
+msgstr "ثبت نام"
 
-#: _base.html:148
+#: _base.html:163
 msgid "About us"
 msgstr "درباره ما"
 
-#: _base.html:150
+#: _base.html:165
 msgid "Terms and Conditions"
 msgstr "قوانین و مقررات"
 
@@ -97,3 +97,15 @@ msgid ""
 "This e-mail confirmation link expired or is invalid. Please <a "
 "href=\"%(email_url)s\">issue a new e-mail confirmation request</a>."
 msgstr ""
+
+#~ msgid "Account"
+#~ msgstr "حساب کاربری"
+
+#~ msgid "Cart"
+#~ msgstr "سبد خرید"
+
+#~ msgid "Favorites"
+#~ msgstr "موارد دلخواه"
+
+#~ msgid "Order history"
+#~ msgstr "تاریخچه سفارش"

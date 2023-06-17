@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-13 01:24+0330\n"
-"PO-Revision-Date: 2023-06-13 01:26+0330\n"
+"POT-Creation-Date: 2023-06-16 01:19+0330\n"
+"PO-Revision-Date: 2023-06-16 01:21+0330\n"
 "Last-Translator:   <miladyousefi4s@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -51,7 +51,7 @@ msgstr "متن دیدگاه"
 
 #: models.py:44
 msgid "What is your Score?"
-msgstr "امتیاز شما به این محصول :"
+msgstr "امتیاز شما به این محصول"
 
 #: templates/products/product_detail.html:7
 msgid "Specifications, Price and Buy"
@@ -61,60 +61,73 @@ msgstr "مشخصات‌، قیمت و خرید"
 msgid "Product of detail"
 msgstr "جزییات محصول"
 
-#: templates/products/product_detail.html:41
+#: templates/products/product_detail.html:43
 #: templates/products/product_list.html:67
 msgid "$"
 msgstr "تومان"
 
-#: templates/products/product_detail.html:52
+#: templates/products/product_detail.html:57
 #: templates/products/product_list.html:73
 msgid "Add to Cart"
 msgstr "اضافه به سبد خرید"
 
-#: templates/products/product_detail.html:56
+#: templates/products/product_detail.html:63
 msgid "Categories"
 msgstr "دسته ‌بندی ‌ها"
 
-#: templates/products/product_detail.html:57
+#: templates/products/product_detail.html:64
 msgid "Phone"
 msgstr "گوشی"
 
-#: templates/products/product_detail.html:58
+#: templates/products/product_detail.html:65
 msgid "Apple"
 msgstr "اپل"
 
-#: templates/products/product_detail.html:69
+#: templates/products/product_detail.html:77
 msgid "Product Description"
 msgstr "توضیحات محصول"
 
-#: templates/products/product_detail.html:72
+#: templates/products/product_detail.html:81
 msgid "Property"
 msgstr "ویژگی‌ها"
 
-#: templates/products/product_detail.html:75
+#: templates/products/product_detail.html:85
 msgid "Comments"
 msgstr "نظرات"
 
-#: templates/products/product_detail.html:90
+#: templates/products/product_detail.html:102
 msgid "Weight"
 msgstr "وزن"
 
-#: templates/products/product_detail.html:94
+#: templates/products/product_detail.html:106
 msgid "Size"
 msgstr "ابعاد"
 
-#: templates/products/product_detail.html:98
+#: templates/products/product_detail.html:110
 msgid "Display"
 msgstr "صفحه نمایش"
 
-#: templates/products/product_detail.html:142
+#: templates/products/product_detail.html:159
 msgid "Write your comment"
 msgstr "نظر خود را بنویسید"
 
-#: templates/products/product_detail.html:147
+#: templates/products/product_detail.html:165
 msgid "Submit"
 msgstr "ارسال"
+
+#: templates/products/product_detail.html:169
+#| msgid "To write your comment please "
+msgid "To write your comment please"
+msgstr "برای نوشتن نظرخود لطفا وارد سایت شوید."
+
+#: templates/products/product_detail.html:170
+msgid "Login"
+msgstr "لینک ورود"
 
 #: templates/products/product_list.html:4
 msgid "Home"
 msgstr "خانه"
+
+#: views.py:40
+msgid "Your comment has been successfully registered"
+msgstr "نظر شما با موفقیت ثبت شد"
