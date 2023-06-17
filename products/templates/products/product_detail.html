@@ -5,6 +5,7 @@
 {% load comment_tags %}
 {% load i18n %}
 {% load persian_translation_tags %}
+{% load humanize %}
 
 {% block page_title %} {% trans 'Specifications, Price and Buy' %} {{ product.title }} {% endblock %}
 
@@ -33,7 +34,7 @@
                                     Apple iPhone Dual SIM 128GB And 4GB RAM Mobile Phone - Not Activate
                                 </p>
                                 <div class="my-5 py-5 product-price-wrapper mb--25">
-                                    <span class="money text-success">{{ product.price|translate_number }}{% trans '$' %}</span>
+                                    <span class="money text-success">{{ product.price|intcomma:False|translate_number }}{% trans '$' %}</span>
                                                                         <span class="price-separator">-</span>
                                                                         <span class="money old-price text-danger">۲۱۰,۰۰۰ تومان</span>
                                 </div>
