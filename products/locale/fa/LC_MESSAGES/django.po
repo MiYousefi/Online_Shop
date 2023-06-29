@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-16 01:19+0330\n"
-"PO-Revision-Date: 2023-06-16 01:21+0330\n"
+"PO-Revision-Date: 2023-06-29 00:48+0330\n"
 "Last-Translator:   <miladyousefi4s@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -40,10 +40,9 @@ msgid "Very Good"
 msgstr "عالی"
 
 #: models.py:41
-#, fuzzy
 #| msgid "Comments"
 msgid "Comment_author"
-msgstr "نظرات نوسنده"
+msgstr "نظرات نویسنده"
 
 #: models.py:43
 msgid "Comment Text"
