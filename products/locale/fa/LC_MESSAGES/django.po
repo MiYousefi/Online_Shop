@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-16 01:19+0330\n"
-"PO-Revision-Date: 2023-06-29 00:48+0330\n"
+"POT-Creation-Date: 2023-06-29 14:24+0330\n"
+"PO-Revision-Date: 2023-06-29 14:25+0330\n"
 "Last-Translator:   <miladyousefi4s@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -19,111 +19,139 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.9\n"
 
-#: models.py:31
+#: models.py:10
+msgid "Title"
+msgstr "عنوان"
+
+#: models.py:11
+#| msgid "Product Description"
+msgid "Short Description"
+msgstr "توضیح مختصر"
+
+#: models.py:12
+#| msgid "Product Description"
+msgid "Description"
+msgstr "توضیحات محصول"
+
+#: models.py:13
+msgid "Price"
+msgstr "قیمت"
+
+#: models.py:14
+msgid "Active"
+msgstr "فعال"
+
+#: models.py:15
+#| msgid "Product of detail"
+msgid "Product Image"
+msgstr "تصویر محصول"
+
+#: models.py:17
+msgid "DateTime Create"
+msgstr "تاریخ ایجاد"
+
+#: models.py:18
+msgid "DateTime Modified"
+msgstr "تاریخ تغییر"
+
+#: models.py:35
 msgid "Very Bad"
 msgstr "خیلی بد"
 
-#: models.py:32
+#: models.py:36
 msgid "Bad"
 msgstr "بد"
 
-#: models.py:33
+#: models.py:37
 msgid "Normal"
 msgstr "معمولی"
 
-#: models.py:34
+#: models.py:38
 msgid "Good"
 msgstr "خوب"
 
-#: models.py:35
+#: models.py:39
 msgid "Very Good"
 msgstr "عالی"
 
-#: models.py:41
-#| msgid "Comments"
+#: models.py:45
 msgid "Comment_author"
 msgstr "نظرات نویسنده"
 
-#: models.py:43
+#: models.py:47
 msgid "Comment Text"
 msgstr "متن دیدگاه"
 
-#: models.py:44
+#: models.py:48
 msgid "What is your Score?"
 msgstr "امتیاز شما به این محصول"
 
-#: templates/products/product_detail.html:7
+#: templates/products/product_detail.html:10
 msgid "Specifications, Price and Buy"
 msgstr "مشخصات‌، قیمت و خرید"
 
-#: templates/products/product_detail.html:18
-msgid "Product of detail"
-msgstr "جزییات محصول"
-
-#: templates/products/product_detail.html:43
-#: templates/products/product_list.html:67
+#: templates/products/product_detail.html:37
+#: templates/products/product_list.html:71
 msgid "$"
 msgstr "تومان"
 
-#: templates/products/product_detail.html:57
-#: templates/products/product_list.html:73
+#: templates/products/product_detail.html:51
 msgid "Add to Cart"
 msgstr "اضافه به سبد خرید"
 
-#: templates/products/product_detail.html:63
+#: templates/products/product_detail.html:57
 msgid "Categories"
 msgstr "دسته ‌بندی ‌ها"
 
-#: templates/products/product_detail.html:64
+#: templates/products/product_detail.html:58
 msgid "Phone"
 msgstr "گوشی"
 
-#: templates/products/product_detail.html:65
+#: templates/products/product_detail.html:59
 msgid "Apple"
 msgstr "اپل"
 
-#: templates/products/product_detail.html:77
+#: templates/products/product_detail.html:71
 msgid "Product Description"
 msgstr "توضیحات محصول"
 
-#: templates/products/product_detail.html:81
+#: templates/products/product_detail.html:75
 msgid "Property"
 msgstr "ویژگی‌ها"
 
-#: templates/products/product_detail.html:85
+#: templates/products/product_detail.html:79
 msgid "Comments"
 msgstr "نظرات"
 
-#: templates/products/product_detail.html:102
+#: templates/products/product_detail.html:96
 msgid "Weight"
 msgstr "وزن"
 
-#: templates/products/product_detail.html:106
+#: templates/products/product_detail.html:100
 msgid "Size"
 msgstr "ابعاد"
 
-#: templates/products/product_detail.html:110
+#: templates/products/product_detail.html:104
 msgid "Display"
 msgstr "صفحه نمایش"
 
-#: templates/products/product_detail.html:159
+#: templates/products/product_detail.html:153
 msgid "Write your comment"
 msgstr "نظر خود را بنویسید"
 
-#: templates/products/product_detail.html:165
+#: templates/products/product_detail.html:159
 msgid "Submit"
 msgstr "ارسال"
 
-#: templates/products/product_detail.html:169
-#| msgid "To write your comment please "
+#: templates/products/product_detail.html:163
 msgid "To write your comment please"
 msgstr "برای نوشتن نظرخود لطفا وارد سایت شوید."
 
-#: templates/products/product_detail.html:170
+#: templates/products/product_detail.html:164
 msgid "Login"
 msgstr "لینک ورود"
 
-#: templates/products/product_list.html:4
+#: templates/products/product_list.html:6
 msgid "Home"
 msgstr "خانه"
 

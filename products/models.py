@@ -7,15 +7,15 @@ from ckeditor.fields import RichTextField
 
 
 class Product(models.Model):
-    title = models.CharField(max_length=150)
-    short_description = models.TextField(blank=True)
-    description = RichTextField()
-    price = models.PositiveIntegerField(default=0)
-    active = models.BooleanField(default=True)
+    title = models.CharField(_('Title'), max_length=150)
+    short_description = models.TextField(_('Short Description'), blank=True)
+    description = RichTextField(_('Description'), )
+    price = models.PositiveIntegerField(_('Price'), default=0)
+    active = models.BooleanField(_('Active'), default=True)
     image = models.ImageField(_('Product Image'), upload_to='product/cover', blank=True)
 
-    datetime_created = models.DateTimeField(_('Date Time of Creation'), default=timezone.now)
-    datetime_modified = models.DateTimeField(auto_now=True)
+    datetime_created = models.DateTimeField(_('DateTime Create'), default=timezone.now)
+    datetime_modified = models.DateTimeField(_('DateTime Modified'), auto_now=True)
 
     def __str__(self):
         return self.title
