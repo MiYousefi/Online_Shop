@@ -7,10 +7,9 @@
     <div class="mini-cart-wrapper">
         <a href="" class="btn-close"><i class="flaticon flaticon-cross"></i></a>
         <div class="mini-cart-inner">
-            <h3 class="mini-cart__heading mb--40 mb-lg--30 text-right">سبد خرید</h3>
+            <h3 class="mini-cart__heading mb--40 mb-lg--30 text-right">{% trans 'Cart' %}</h3>
             <div class="mini-cart__content">
                 <ul class="mini-cart__list text-right">
-
                     {% for item in cart %}
                         <li class="mini-cart__product d-flex justify-content-between">
                             <div class="mini-cart__product__image">
@@ -20,10 +19,7 @@
                             </div>
                             <div class="mini-cart__product__content pt-2">
                                     <span class="mini-cart__product__title d-flex flex-row justify-content-between">
-                                        <a href="#"> {{ item.product_obj.title }}</a>
-                                        <a href="#" class="">
-                                            &#10060;
-                                        </a>
+                                        <a href="{{ item.product_obj.get_absolute_url }}"> {{ item.product_obj.title }}</a>
                                     </span>
                                 <span class="mini-cart__product__quantity">
                                         <span>{{ item.product_obj.price|intcomma:False|translate_number }} {% trans '$' %}</span> &#215; <span>{{ item.quantity|translate_number }}</span>
@@ -39,7 +35,7 @@
                 <div class="mini-cart__buttons">
                     <a href="{% url 'cart:cart_detail' %}"
                        class="btn btn-fullwidth btn-bg-sand mb--20">{% trans 'Go to Cart' %}</a>
-                    <a href="checkout.html" class="btn btn-fullwidth btn-bg-sand">{% trans 'Checkout' %}</a>
+                    <a href="{% url 'order_create' %}" class="btn btn-fullwidth btn-bg-sand">{% trans 'Checkout' %}</a>
                 </div>
             </div>
         </div>

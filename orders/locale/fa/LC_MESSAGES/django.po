@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-04 13:05+0330\n"
-"PO-Revision-Date: 2023-07-04 13:06+0330\n"
-"Last-Translator:   <miladyousefi4s@gmail.com>\n"
+"POT-Creation-Date: 2023-07-04 15:18+0330\n"
+"PO-Revision-Date: 2023-07-04 15:20+0330\n"
+"Last-Translator: ss s <miladyousefi4s@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.9\n"
 
-#: forms.py:12
+#: forms.py:12 templates/orders/order_create.html:79
 msgid "If you have any notes please enter here"
 msgstr "اگر یادداشتی دارید لطفا اینجا وارد کنید"
 
@@ -31,23 +31,23 @@ msgstr "کاربر"
 msgid "Is Paid?"
 msgstr "پرداخت شده ؟"
 
-#: models.py:10
+#: models.py:10 templates/orders/order_create.html:34
 msgid "First Name"
 msgstr "نام"
 
-#: models.py:11
-msgid "last Name"
+#: models.py:11 templates/orders/order_create.html:44
+msgid "Last Name"
 msgstr "نام خانوادگی"
 
-#: models.py:12
+#: models.py:12 templates/orders/order_create.html:55
 msgid "Phone Number"
 msgstr "شماره تماس"
 
-#: models.py:13
+#: models.py:13 templates/orders/order_create.html:66
 msgid "Address"
 msgstr "آدرس"
 
-#: models.py:15
+#: models.py:15 templates/orders/order_create.html:76
 msgid "Order Note"
 msgstr "یادداشت سفارش"
 
@@ -64,11 +64,11 @@ msgstr "تاریخ تغییر"
 msgid "Order"
 msgstr "سفارش"
 
-#: models.py:26 templates/orders/order_create.html:91
+#: models.py:26 templates/orders/order_create.html:98
 msgid "Product"
 msgstr "محصول"
 
-#: models.py:27 templates/orders/order_create.html:92
+#: models.py:27 templates/orders/order_create.html:99
 msgid "Quantity"
 msgstr "تعداد"
 
@@ -80,32 +80,44 @@ msgstr "قمیت"
 msgid "Detail of Order"
 msgstr "جزییات سفارش"
 
-#: templates/orders/order_create.html:85
+#: templates/orders/order_create.html:84
+msgid "Submit"
+msgstr "ارسال"
+
+#: templates/orders/order_create.html:92
 msgid "Your Order"
 msgstr "سفارش شما"
 
-#: templates/orders/order_create.html:93
+#: templates/orders/order_create.html:100
 msgid "Final Price"
 msgstr "قمیت نهایی"
 
-#: templates/orders/order_create.html:101
-#: templates/orders/order_create.html:109
+#: templates/orders/order_create.html:108
+#: templates/orders/order_create.html:116
 msgid "$"
 msgstr "تومان"
 
-#: templates/orders/order_create.html:107
+#: templates/orders/order_create.html:114
 msgid "Total"
 msgstr "مجموع"
 
-#: templates/orders/order_create.html:115
+#: templates/orders/order_create.html:122
 msgid "Payment Method"
 msgstr "روش پرداخت"
 
-#: templates/orders/order_create.html:121
+#: templates/orders/order_create.html:129
 msgid "Zarinpal Online portal"
 msgstr "درگاه آنلاین زرین پال"
 
-#~ msgid "Last Name"
+#: views.py:17
+msgid "You can not proceed to checkout page because your cart is empty"
+msgstr "شما نمی‌ توانید به صفحه ثبت سفارش بروید زیرا سبد خرید شما خالی است"
+
+#: views.py:42
+msgid "Your order has successfully placed"
+msgstr "سفارش شما با موفقیت انجام شد"
+
+#~ msgid "last Name"
 #~ msgstr "نام خانوادگی"
 
 #~ msgid "Email"

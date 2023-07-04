@@ -8,7 +8,7 @@ class Order(models.Model):
     is_paid = models.BooleanField(_('Is Paid?'), default=False)
 
     firstname = models.CharField(_('First Name'), max_length=100)
-    lastname = models.CharField(_('last Name'), max_length=100)
+    lastname = models.CharField(_('Last Name'), max_length=100)
     phone_number = models.CharField(_('Phone Number'), max_length=15)
     address = models.CharField(_('Address'), max_length=700)
 
