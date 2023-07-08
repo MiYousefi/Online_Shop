@@ -1,15 +1,31 @@
 {% extends '_base.html' %}
-
+{% load i18n %}
 {% load crispy_forms_tags %}
 
-{% block page_title %}
-LogIn
-{% endblock %}
+{% block page_title %}{% trans 'Login' %}{% endblock %}
+
 
 {% block content %}
-    <form action="" method="post">
-    {% csrf_token %}
-    {{ form|crispy }}
-    <input type="submit" value="Login">
     </form>
+      <div class="d-flex justify-content-center mt-5" dir="rtl">
+        <div class="col-xl-5 col-lg-4 col-md-5 col-sm-5 col-xs-6 bg-white m-3 m-sm-5 border rounded px-5 pt-6 pb-3 shadow">
+            <form method="post">
+                {% csrf_token %}
+                <br>
+                <h4 class="text-center text-muted">{% trans 'Login to account' %}</h4>
+                <br>
+                {{ form|crispy }}
+                <div class="form-group">
+                    <button type="submit" class="btn-success mt-4 w-100" >{% trans 'Login' %}</button>
+                    <div class="line-with-middle-sep">
+
+                    </div>
+
+                    <p class="text-muted">حساب کاربری ندارید؟ <a class="text-decoration-none text-success" href="{% url 'account_signup' %}">ثبت نام کنید.</a></p>
+                    <p class="text-muted">رمز عبور خود را فراموش کردید؟ <a class="text-decoration-none text-success" href="">اینجا کلیک کنید.</a></p>
+                </div>
+            </form>
+        </div>
+
+    </div>
 {% endblock %}

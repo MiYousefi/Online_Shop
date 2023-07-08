@@ -1,14 +1,26 @@
 {% extends '_base.html' %}
+{% load i18n %}
+{% load crispy_forms_tags %}
 
-{% block page_title %}
-LogOut
-{% endblock %}
+
+{% block page_title %} {% trans 'Logout' %} {% endblock %}
 
 {% block content %}
-    <h1>LogOut</h1>
-    <h2>Are you sure you want to logout?</h2>
-    <form action="" method="post">
-        {% csrf_token %}
-        <input type="submit" value="LogOut">
-    </form>
+    <div class="d-flex justify-content-center mt-3" dir="rtl">
+        <div class="col-xl-5 col-lg-4 col-md-5 col-sm-5 col-xs-6 bg-white m-3 m-sm-5 border rounded px-5 pt-6 pb-3 shadow">
+            <br>
+            <h1 class="text-center text-muted">{% trans 'Logout' %}</h1>
+            <br>
+            <h2 class="text-center">{% trans 'Are you sure you want to logout?' %}</h2>
+            <form method="post">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <div class="form-group">
+                    <div class="d-flex justify-content-between align-items-center"></div>
+                    <button type="submit" class="btn btn-small btn-bg-red btn-color-white btn-hover-2 mt-5 w-45">{% trans 'Yes' %}</button>
+                    <a class="btn btn-small btn-bg-red btn-color-white btn-hover-2 mt-5 w-45" href="{% url 'product_list' %}">{% trans 'No' %}</a>
+                </div>
+            </form>
+        </div>
+    </div>
 {% endblock %}

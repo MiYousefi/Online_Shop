@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-16 01:13+0330\n"
-"PO-Revision-Date: 2023-07-04 15:20+0330\n"
+"POT-Creation-Date: 2023-07-04 18:05+0330\n"
+"PO-Revision-Date: 2023-07-04 18:05+0330\n"
 "Last-Translator: ss s <miladyousefi4s@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -97,6 +97,39 @@ msgid ""
 "This e-mail confirmation link expired or is invalid. Please <a "
 "href=\"%(email_url)s\">issue a new e-mail confirmation request</a>."
 msgstr ""
+
+#: account/login.html:5 account/login.html:19
+msgid "Login"
+msgstr "ورود"
+
+#: account/login.html:15
+msgid "Login to account"
+msgstr "ورود به حساب کاربری"
+
+#: account/logout.html:6 account/logout.html:12
+msgid "Logout"
+msgstr "خروج"
+
+#: account/logout.html:14
+msgid "Are you sure you want to logout?"
+msgstr "آیا برای خروج مطمئنید ؟"
+
+#: account/logout.html:20
+msgid "Yes"
+msgstr "بله"
+
+#: account/logout.html:21
+msgid "No"
+msgstr "خیر"
+
+#: account/signup.html:5 account/signup.html:13 account/signup.html:21
+#, fuzzy
+#| msgid "Sign up"
+msgid "Signup"
+msgstr "ثبت نام"
+
+#~ msgid "Sure"
+#~ msgstr "بله"
 
 #~ msgid "Account"
 #~ msgstr "حساب کاربری"
